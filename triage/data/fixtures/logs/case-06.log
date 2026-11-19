@@ -1,0 +1,5 @@
+[2025-02-06 03:00:00] INFO Beginning history merge
+[2025-02-06 03:00:00] INFO Task wall-clock budget is 300 seconds
+[2025-02-06 03:04:58] INFO Finished reading existing history
+[2025-02-06 03:05:00] ERROR Operator watchdog expired: task execution deadline exceeded after 300 seconds
+[2025-02-06 03:05:01] INFO SIGTERM sent to task subprocess

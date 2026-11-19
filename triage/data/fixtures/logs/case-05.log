@@ -1,0 +1,5 @@
+[2025-02-05 01:00:01] INFO Checking producer completion for hour 2025-02-05T00
+[2025-02-05 01:00:01] INFO Input directory exists
+[2025-02-05 01:00:02] ERROR MissingCompletionMarker: required _SUCCESS marker was absent after the publication window
+[2025-02-05 01:00:02] ERROR Upstream manifest is absent; consumer refused to read the uncommitted batch
+[2025-02-05 01:00:03] INFO Aggregation did not start

@@ -1,0 +1,5 @@
+[2025-02-02 08:00:01] INFO Cluster training started
+[2025-02-02 08:00:01] INFO Task execution_timeout configured to 600s
+[2025-02-02 08:09:59] INFO Iteration 37 completed
+[2025-02-02 08:10:01] ERROR AirflowTaskTimeout: operator exceeded task execution_timeout at 600s elapsed
+[2025-02-02 08:10:02] INFO Worker reaped task subprocess

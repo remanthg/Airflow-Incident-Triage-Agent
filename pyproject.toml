@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airflow-incident-triage-agent"
+version = "0.1.0"
+description = "Read-only Airflow task incident triage using synthetic local evidence"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27,<1",
+    "langchain-community>=0.4.1,<0.5",
+    "langchain-core>=1.2.22,<2",
+    "langchain-ollama>=1,<2",
+    "langchain-openai>=1,<2",
+    "langgraph>=1,<2",
+    "mcp>=1.30,<2",
+    "pydantic>=2.11,<3",
+    "PyJWT[crypto]>=2.10,<3",
+    "scikit-learn>=1.7,<2",
+    "starlette>=0.27,<2",
+    "uvicorn>=0.34,<1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+airflow-triage = "triage.cli:main"
+
+[tool.setuptools]
+packages = ["triage"]
+
+[tool.setuptools.package-data]
+triage = ["data/fixtures/index.json", "data/fixtures/logs/*.log", "data/runbooks/*.md", "data/evaluation/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

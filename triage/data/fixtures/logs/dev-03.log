@@ -1,0 +1,5 @@
+[2025-01-13 06:00:02] INFO Loading task code in worker image
+[2025-01-13 06:00:02] ERROR Traceback (most recent call last):
+    import feature_helpers
+ModuleNotFoundError: No module named 'feature_helpers'
+[2025-01-13 06:00:02] INFO Marking task FAILED

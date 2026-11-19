@@ -1,0 +1,5 @@
+[2025-02-10 06:00:00] INFO Launched dimension refresh command
+[2025-02-10 06:14:59] INFO Subprocess was still processing shards
+[2025-02-10 06:15:00] ERROR Task reached its configured wall-clock run limit of 15 minutes
+[2025-02-10 06:15:00] ERROR Supervisor terminated the operator because its task execution deadline passed
+[2025-02-10 06:15:01] INFO Recorded failed attempt

@@ -1,0 +1,4 @@
+[2025-01-12 06:00:02] INFO Worker started the daily aggregation
+[2025-01-12 06:00:02] INFO Configured execution_timeout=120 seconds
+[2025-01-12 06:02:02] ERROR AirflowTaskTimeout: task execution deadline reached after 120 seconds
+[2025-01-12 06:02:02] INFO Marking task FAILED

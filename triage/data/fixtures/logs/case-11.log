@@ -1,0 +1,5 @@
+[2025-02-11 11:00:01] INFO Loading scorer extension into Python worker
+[2025-02-11 11:00:02] INFO Extension wheel is present
+[2025-02-11 11:00:02] ERROR ImportError: cannot load _risk_native.pyd (unresolved shared library symbol)
+[2025-02-11 11:00:02] ERROR Compiled extension failed to initialize due to an ABI mismatch
+[2025-02-11 11:00:03] INFO Task failed during imports

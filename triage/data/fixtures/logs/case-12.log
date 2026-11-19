@@ -1,0 +1,4 @@
+[2025-02-12 12:00:00] INFO Input table loaded with 380 rows
+[2025-02-12 12:00:01] INFO Validation rules imported
+[2025-02-12 12:00:01] ERROR SchemaValidationError: account_id contains duplicate values
+[2025-02-12 12:00:02] INFO Rejecting output and marking task failed

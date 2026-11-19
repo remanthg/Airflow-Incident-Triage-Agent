@@ -1,0 +1,5 @@
+[2025-01-11 06:00:02] INFO Starting task attempt on worker-01
+[2025-01-11 06:00:03] INFO Resolved input partition sales/dt=2025-01-10/
+[2025-01-11 06:00:04] INFO Reading upstream parquet output
+[2025-01-11 06:00:04] ERROR FileNotFoundError: expected upstream input sales/dt=2025-01-10/part-000.parquet
+[2025-01-11 06:00:04] INFO Marking task FAILED

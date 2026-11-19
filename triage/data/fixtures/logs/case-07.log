@@ -1,0 +1,5 @@
+[2025-02-07 05:00:00] INFO Worker initializing tokenizer plugin
+[2025-02-07 05:00:01] INFO Installed tokenizer_core version 2.1
+[2025-02-07 05:00:01] ERROR ImportError: cannot import name 'fast_normalize' from 'tokenizer_core'
+[2025-02-07 05:00:01] ERROR Plugin expects tokenizer_core's 3.x API
+[2025-02-07 05:00:02] INFO Worker exited before reading documents

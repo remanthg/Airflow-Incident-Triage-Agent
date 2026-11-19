@@ -1,0 +1,30 @@
+name: airflow-triage-demo
+services:
+  airflow:
+    image: apache/airflow:3.1.6-python3.12
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS: "triage_demo_admin:admin,triage_demo_reader:viewer"
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_PASSWORDS_FILE: /opt/airflow/triage-passwords.json
+    volumes:
+      - ./dags:/opt/airflow/dags:ro
+    command:
+      - bash
+      - -ec
+      - |
+        python - <<'PY'
+        import json
+        import os
+        import secrets
+        from pathlib import Path
+
+        os.umask(0o077)
+        path = Path('/opt/airflow/triage-passwords.json')
+        if not path.exists():
+            users = ('triage_demo_admin', 'triage_demo_reader')
+            path.write_text(json.dumps({user: secrets.token_urlsafe(32) for user in users}))
+        PY
+        exec airflow standalone

@@ -1,0 +1,5 @@
+[2025-02-01 02:00:00] INFO Starting bank settlement import, attempt 2
+[2025-02-01 02:00:05] INFO Looking for the upstream snapshot for ledger date 2025-01-31
+[2025-02-01 02:00:05] ERROR Object lookup returned NoSuchKey (404) for ledger/dt=2025-01-31/snapshot.parquet
+[2025-02-01 02:00:05] ERROR Required input partition has no objects for this data interval
+[2025-02-01 02:00:05] INFO Task exited with code 1

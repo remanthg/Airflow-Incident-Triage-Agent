@@ -1,0 +1,5 @@
+[2025-02-08 07:00:01] INFO Partner report sync began, task execution limit 900 seconds
+[2025-02-08 07:00:06] WARN First endpoint request timed out; retrying alternate endpoint
+[2025-02-08 07:00:11] WARN Fallback cache reported missing snapshot; cache availability was optional
+[2025-02-08 07:00:15] ERROR Sync returned generic error code 1; endpoint retry outcome was not captured
+[2025-02-08 07:00:16] INFO Attempt finished after 15 seconds

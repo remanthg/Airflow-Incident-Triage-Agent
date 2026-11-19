@@ -1,0 +1,5 @@
+[2025-02-09 05:00:00] INFO Planning receipt reconciliation
+[2025-02-09 05:00:01] INFO Data interval is 2025-02-08 UTC
+[2025-02-09 05:00:02] ERROR Input table has zero rows for the required upstream partition p_date=2025-02-08
+[2025-02-09 05:00:02] ERROR Source extract has no partition for the requested date; reconciliation aborted
+[2025-02-09 05:00:02] INFO Exiting without output

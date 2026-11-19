@@ -1,0 +1,5 @@
+[2025-02-03 09:00:01] INFO Launching coordinate resolver in Python worker
+[2025-02-03 09:00:02] ERROR Traceback (most recent call last):
+    from projected_grids import lookup
+ModuleNotFoundError: No module named 'projected_grids'
+[2025-02-03 09:00:02] INFO Failed before resolver startup
